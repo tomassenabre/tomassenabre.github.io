@@ -3,13 +3,13 @@
 
 root="photos"
 
-echo "---
+echo '---
 layout: page
 title: "Fotodiario"
 description: "archive"
 active: gallery
 header-img: "img/gallery-bg.jpg"
-images:" > index.html
+images:' > index.html
 
 # Listado de las galerías, comentar el comando sort para evitar
 # el ordenamiento numérico
@@ -25,11 +25,11 @@ echo " - image_path: /$root/albums/$dir.jpg
 # Index de cada galería
 echo "---
 layout: page
-title: "$dir"
-description: "Fotodiario durante el año $dir"
+title: \"$dir\"
+description: \"Fotodiario durante el año $dir\"
 active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "$dir"
+header-img: \"img/gallery-bg.jpg\"
+album-title: \"$dir\"
 images:" > $dir/index.html
 
 # Listado de imágenes
