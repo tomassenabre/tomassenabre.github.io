@@ -1,75 +1,88 @@
 ---
 layout: page
-title: "2009"
-description: "Entrenamiento en el año 2009"
+title: 2004
+description: Fotodiario durante el año 2004
 active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "2009"
+header-img: img/gallery-bg.jpg
+album-title: 2004
 images:
- - image_path: /photos/archive/2009/20091012080008_img_1177_cafe.jpg
-   caption: Café
-   mfp-title: Café
+ - image_path: /photos/archive/2004/2004_01_02_rev_20171216_Jota.jpg
+   caption: 2004_01_02_rev_20171216_Jota
+   mfp-title: 2004_01_02_rev_20171216_Jota
    copyright: © Tomás Senabre
- - image_path: /gallery/archive/g09/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g09/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: 
-   caption: Café
-   mfp-title: Café
+ - image_path: /photos/archive/2004/2004_01_18_rev_20171216_Farola.jpg
+   caption: 2004_01_18_rev_20171216_Farola
+   mfp-title: 2004_01_18_rev_20171216_Farola
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2004/2004_05_16_rev_20171216_ventana.jpg
+   caption: 2004_05_16_rev_20171216_ventana
+   mfp-title: 2004_05_16_rev_20171216_ventana
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2004/2004_05_18_rev_20171216_sax.jpg
+   caption: 2004_05_18_rev_20171216_sax
+   mfp-title: 2004_05_18_rev_20171216_sax
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2004/2004_06_05_rev_20171216_conejo.jpg
+   caption: 2004_06_05_rev_20171216_conejo
+   mfp-title: 2004_06_05_rev_20171216_conejo
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2004/2004_06_13_rev_20171216_procesion.jpg
+   caption: 2004_06_13_rev_20171216_procesion
+   mfp-title: 2004_06_13_rev_20171216_procesion
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2004/2004_11_13_rev_20171216_carro.jpg
+   caption: 2004_11_13_rev_20171216_carro
+   mfp-title: 2004_11_13_rev_20171216_carro
    copyright: © Tomás Senabre
 ---
 
 <html class="no-js" lang="es">
 <head>
-	<meta content="charset=utf-8">
+        <meta content="charset=utf-8">
 </head>
 
     <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+
+        <section id="content" role="main">
+                <div class="wrapper">
+        <br><br>
+                        <h2>{{page.album-title}}</h2>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+                        <!-- Gallery __-->
+                        <div class="gallery masonry-gallery">
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+{% for image in page.images %}
+
+                                <figure class="gallery-item">
+                                        <header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
+
+                                        </header>
+                                        <figcaption class='gallery-caption'>
+                                                <div class="entry-summary">
+                                                        <h3>{{image.caption}}</h3>
+                                                        <p>{{image.copyright}}</p>
+                                                </div>
+                                        </figcaption>
+                                </figure>
+
 {% endfor %}
 
-			</div>
+                        </div>
 
-		</div><!-- END .wrapper -->
-	</section>
+                </div><!-- END .wrapper -->
+        </section>
 
-<!-- jQuery -->    
-
+<!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
 <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -85,7 +98,7 @@ images:
       $(document).ready(function($) {
         $('a.popup').magnificPopup({
           type: 'image',
-	  gallery:{
+          gallery:{
          enabled:true,
          navigateByImgClick: true,
          preload: [0,1] // Will preload 0 - before current, and 1 after the current image

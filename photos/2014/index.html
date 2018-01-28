@@ -1,71 +1,108 @@
 ---
 layout: page
-title: "album"
-description: "masonry"
+title: 2014
+description: Fotodiario durante el año 2014
 active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "my 4th album"
+header-img: img/gallery-bg.jpg
+album-title: 2014
 images:
- - image_path: /gallery/archive/g04/bg1.jpg
-   caption: IMAGE TITLE
-   mfp-title: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g04/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g04/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+ - image_path: /photos/archive/2014/2014_02_20_mi_habitacion.jpg
+   caption: 2014_02_20_mi_habitacion
+   mfp-title: 2014_02_20_mi_habitacion
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_03_12_rutina.jpg
+   caption: 2014_03_12_rutina
+   mfp-title: 2014_03_12_rutina
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_03_18_movimiento.jpg
+   caption: 2014_03_18_movimiento
+   mfp-title: 2014_03_18_movimiento
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_04_02_papa.jpg
+   caption: 2014_04_02_papa
+   mfp-title: 2014_04_02_papa
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_05_17_puerta.jpg
+   caption: 2014_05_17_puerta
+   mfp-title: 2014_05_17_puerta
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_06_08_piscina.jpg
+   caption: 2014_06_08_piscina
+   mfp-title: 2014_06_08_piscina
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_06_11_farola.jpg
+   caption: 2014_06_11_farola
+   mfp-title: 2014_06_11_farola
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_06_19_autoretrato.jpg
+   caption: 2014_06_19_autoretrato
+   mfp-title: 2014_06_19_autoretrato
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_06_21_helado.jpg
+   caption: 2014_06_21_helado
+   mfp-title: 2014_06_21_helado
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_08_20_Spain.jpg
+   caption: 2014_08_20_Spain
+   mfp-title: 2014_08_20_Spain
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_08_28_corazon.jpg
+   caption: 2014_08_28_corazon
+   mfp-title: 2014_08_28_corazon
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2014/2014_08_29_Zapatillas.jpg
+   caption: 2014_08_29_Zapatillas
+   mfp-title: 2014_08_29_Zapatillas
+   copyright: © Tomás Senabre
 ---
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 <head>
-	<meta content="charset=utf-8">
+        <meta content="charset=utf-8">
 </head>
 
     <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+
+        <section id="content" role="main">
+                <div class="wrapper">
+        <br><br>
+                        <h2>{{page.album-title}}</h2>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+                        <!-- Gallery __-->
+                        <div class="gallery masonry-gallery">
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+{% for image in page.images %}
+
+                                <figure class="gallery-item">
+                                        <header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
+
+                                        </header>
+                                        <figcaption class='gallery-caption'>
+                                                <div class="entry-summary">
+                                                        <h3>{{image.caption}}</h3>
+                                                        <p>{{image.copyright}}</p>
+                                                </div>
+                                        </figcaption>
+                                </figure>
+
 {% endfor %}
 
-			</div>
+                        </div>
 
-		</div><!-- END .wrapper -->
-	</section>
+                </div><!-- END .wrapper -->
+        </section>
 
-<!-- jQuery -->    
-
+<!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
 <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -81,7 +118,7 @@ images:
       $(document).ready(function($) {
         $('a.popup').magnificPopup({
           type: 'image',
-	  gallery:{
+          gallery:{
          enabled:true,
          navigateByImgClick: true,
          preload: [0,1] // Will preload 0 - before current, and 1 after the current image

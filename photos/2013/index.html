@@ -1,71 +1,80 @@
 ---
 layout: page
-title: "album"
-description: "masonry"
+title: 2013
+description: Fotodiario durante el año 2013
 active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "my 5th album"
+header-img: img/gallery-bg.jpg
+album-title: 2013
 images:
- - image_path: /gallery/archive/g05/bg1.jpg
-   caption: IMAGE TITLE
-   mfp-title: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g05/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g05/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+ - image_path: /photos/archive/2013/2013_01_24_aa.jpg
+   caption: 2013_01_24_aa
+   mfp-title: 2013_01_24_aa
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2013/2013_02_01_original.jpg
+   caption: 2013_02_01_original
+   mfp-title: 2013_02_01_original
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2013/2013_02_09_escaparate.jpg
+   caption: 2013_02_09_escaparate
+   mfp-title: 2013_02_09_escaparate
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2013/2013_02_09_la_espera.jpg
+   caption: 2013_02_09_la_espera
+   mfp-title: 2013_02_09_la_espera
+   copyright: © Tomás Senabre
+ - image_path: /photos/archive/2013/2013_02_16_volver_a_empezar.jpg
+   caption: 2013_02_16_volver_a_empezar
+   mfp-title: 2013_02_16_volver_a_empezar
+   copyright: © Tomás Senabre
 ---
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 <head>
-	<meta content="charset=utf-8">
+        <meta content="charset=utf-8">
 </head>
 
     <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+
+        <section id="content" role="main">
+                <div class="wrapper">
+        <br><br>
+                        <h2>{{page.album-title}}</h2>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+                        <!-- Gallery __-->
+                        <div class="gallery masonry-gallery">
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+{% for image in page.images %}
+
+                                <figure class="gallery-item">
+                                        <header class='gallery-icon'>
 
 <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
+
+                                        </header>
+                                        <figcaption class='gallery-caption'>
+                                                <div class="entry-summary">
+                                                        <h3>{{image.caption}}</h3>
+                                                        <p>{{image.copyright}}</p>
+                                                </div>
+                                        </figcaption>
+                                </figure>
+
 {% endfor %}
 
-			</div>
+                        </div>
 
-		</div><!-- END .wrapper -->
-	</section>
+                </div><!-- END .wrapper -->
+        </section>
 
-<!-- jQuery -->    
-
+<!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
 <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
@@ -81,7 +90,7 @@ images:
       $(document).ready(function($) {
         $('a.popup').magnificPopup({
           type: 'image',
-	  gallery:{
+          gallery:{
          enabled:true,
          navigateByImgClick: true,
          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
