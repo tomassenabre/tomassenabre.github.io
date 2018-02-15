@@ -20,13 +20,13 @@ do
 echo " - image_path: /$root/albums/$dir.jpg
    gallery-folder: /$root/$dir/
    gallery-name: $dir
-   gallery-date: Enero $dir" >> index.html
+   gallery-date: Fotodiario" >> index.html
 
 # Index de cada galería
 echo "---
 layout: page
 title: \"$dir\"
-description: \"Fotodiario durante el año $dir\"
+description: \"Fotodiario durante del año $dir\"
 active: gallery
 header-img: \"img/gallery-bg.jpg\"
 album-title: \"$dir\"
@@ -172,9 +172,6 @@ echo '---
                 </div><!-- END .wrapper -->
         </section>
 
-
-<br>
-<h6><p>Image Source: <a href="https://unsplash.com/photos/YOT6kS8YtEA/">Unsplash</a></p></h6>
 
 <!-- jQuery -->
 
