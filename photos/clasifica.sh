@@ -26,7 +26,7 @@ echo " - image_path: /$root/albums/$dir.jpg
 echo "---
 layout: page
 title: \"$dir\"
-description: \"Fotodiario durante del año $dir\"
+description: \"Fotodiario durante el año $dir\"
 active: gallery
 header-img: \"img/gallery-bg.jpg\"
 album-title: \"$dir\"
